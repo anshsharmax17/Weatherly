@@ -23,7 +23,6 @@ Open to internships and real-world opportunities 💼
 
 <br><br>
 
-- :trophy: 2x `ACPC` Finalist.
 - :technologist: I love using Software as a solution for every `Problem`.
 - :computer: I am a competitive programmer at `Codeforces`, `Atcoder`, `Leetcode`, `Codechef`, `Google Contests`.
 - :student: I’m currently Studying `Computer Science` and `Software Engineering`.
