@@ -1,4 +1,7 @@
 # Weatherly — MERN Weather Web Application
+<img width="1917" height="937" alt="image" src="https://github.com/user-attachments/assets/a0e2715a-64e1-41b1-a6e3-7aee22bb7e2a" />
+<img width="1903" height="933" alt="image" src="https://github.com/user-attachments/assets/09209bf7-00d8-4e06-9265-544c3a98deaa" />
+<img width="1899" height="936" alt="image" src="https://github.com/user-attachments/assets/a696cbd6-73f8-47c6-9501-b5765204c56b" />
 
 Weatherly is a deployment-ready MERN stack weather dashboard with a polished SaaS-style UI, JWT authentication, MongoDB persistence, OpenWeatherMap integration, Chart.js forecasting, PWA support, favorites, recent searches, and animated glassmorphism backgrounds.
 
