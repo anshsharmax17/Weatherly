@@ -19,7 +19,7 @@ const SearchBar = ({ onSearch, onGeoSearch, isLoading }) => {
     <form onSubmit={submit} className="glass flex flex-col gap-3 rounded-3xl p-3 md:flex-row">
       <div className="relative flex-1">
         <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={20} />
-        <input className="input pl-12" value={city} onChange={(event) => setCity(event.target.value)} placeholder="Search city e.g. London, Tokyo, New York" />
+        <input className="input pl-16" value={city} onChange={(event) => setCity(event.target.value)} placeholder="Search city e.g. London, Tokyo, New York" />
       </div>
       <button className="btn-primary" disabled={isLoading}>Search</button>
       <button type="button" onClick={onGeoSearch} className="rounded-2xl border border-white/40 px-5 py-3 font-semibold text-slate-800 transition hover:bg-white/70 dark:text-white dark:hover:bg-white/10">

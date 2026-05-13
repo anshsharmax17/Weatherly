@@ -9,7 +9,6 @@ const Home = () => (
       <p className="mt-6 max-w-2xl text-lg text-slate-700 dark:text-slate-300">Weatherly combines OpenWeatherMap data, JWT accounts, favorite cities, recent searches, geolocation, and Chart.js analytics in a glassmorphism PWA.</p>
       <div className="mt-8 flex flex-wrap gap-3">
         <Link className="btn-primary" to="/register">Create free account <ArrowRight className="inline" /></Link>
-        <Link className="rounded-2xl bg-white/70 px-5 py-3 font-semibold text-slate-900 dark:bg-white/10 dark:text-white" to="/dashboard">Open dashboard</Link>
       </div>
     </section>
     <section className="glass relative overflow-hidden rounded-[2.5rem] p-8">
