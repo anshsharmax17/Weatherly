@@ -12,7 +12,15 @@ import weatherRoutes from './routes/weatherRoutes.js';
 const app = express();
 
 app.use(helmet());
-app.use(cors({ origin: env.clientUrl, credentials: true }));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://weatherly-mern.netlify.app"
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json({ limit: '10kb' }));
 app.use(morgan(env.nodeEnv === 'production' ? 'combined' : 'dev'));
 app.use('/api', apiLimiter);
