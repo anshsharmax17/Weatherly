@@ -1,190 +1,232 @@
-<h1 align="center">Hi 👋, I'm Ansh Sharma</h1>
+# Weatherly — MERN Weather Web Application
 
-<h3 align="center">
-A passionate tech enthusiast pursuing B.Tech in Computer Science Engineering. <br>
-Skilled in Java, Python, Data Analytics, and Web Development. <br>
-Always eager to learn, build, and grow 🌱 <br>
-Open to internships and real-world opportunities 💼
-</h3>
+Weatherly is a deployment-ready MERN stack weather dashboard with a polished SaaS-style UI, JWT authentication, MongoDB persistence, OpenWeatherMap integration, Chart.js forecasting, PWA support, favorites, recent searches, and animated glassmorphism backgrounds.
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=anshsharmax17&label=Profile%20views&color=0e75b6&style=flat" alt="anshsharmax17" />
-</p>
+## Tech Stack
 
-<!-- <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=anshsharmax17" alt="anshsharmax17" />
-  </a>
-</p> -->
+- **Frontend:** React 18, Vite, Tailwind CSS, Context API, Axios, React Router, Framer Motion, Chart.js, PWA
+- **Backend:** Node.js, Express.js, MongoDB, Mongoose, JWT, bcrypt, express-validator
+- **Security:** Helmet, CORS, rate limiting, password hashing, protected routes
+- **Weather API:** OpenWeatherMap current weather and 5-day forecast APIs
 
-## <picture><img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width = 50px></picture> About me
+## Folder Structure
 
-<picture> <img align="right" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width = 250px></picture>
+```text
+.
+├── client/                  # Vite React frontend
+│   ├── public/              # PWA icons and static assets
+│   └── src/
+│       ├── api/             # Axios instance
+│       ├── components/      # Navbar, cards, loader, search, charts
+│       ├── context/         # Auth, theme, weather state providers
+│       ├── hooks/           # Debounce hook
+│       ├── pages/           # Home, Login, Register, Dashboard, Favorites
+│       └── utils/           # Weather formatting helpers
+├── server/                  # Express API backend
+│   └── src/
+│       ├── config/          # Environment and database setup
+│       ├── controllers/     # Auth, weather, user controllers
+│       ├── middleware/      # Auth, validation, errors, rate limits
+│       ├── models/          # Mongoose User schema with favorites/history
+│       ├── routes/          # REST API routes
+│       ├── services/        # JWT and OpenWeatherMap service/cache
+│       └── utils/           # Async and response helpers
+├── render.yaml              # Render backend blueprint
+├── railway.json             # Railway backend config
+└── vercel.json              # Vercel frontend config
+```
 
-<br><br>
+## Features
 
-- :technologist: I love using Software as a solution for every `Problem`.
-- :computer: I am a competitive programmer at `Codeforces`, `Atcoder`, `Leetcode`, `Codechef`, `Google Contests`.
-- :student: I’m currently Studying `Computer Science` and `Software Engineering`.
-- :nerd_face: Always `learning new things`.
-- :thinking: I’m currently open for a new `job opportunity`, this is [MY RESUME](https://1drv.ms/b/c/382c2851185eb8d4/IQBMzU4q4WpLSoQ2ZOqjJvYNAev8LcwWcAmCH_J18cvb1NY?e=qtWKWw).
-- :boom: You can visit [MY WEBSITE](https://portfolio-website-ansh-sharma.vercel.app/).
-<br>
+### Frontend
 
+- Responsive dashboard with reusable components and glassmorphism effects
+- Search weather by city name with debounced requests
+- Geolocation-based weather lookup
+- Current temperature, condition, humidity, wind speed, feels like, sunrise, and sunset
+- 5-day forecast cards with dynamic OpenWeatherMap icons
+- Weather-driven animated gradient backgrounds
+- Dark/light theme toggle persisted in local storage
+- Skeleton loading UI, toast notifications, and API error handling
+- Favorite cities and recently searched cities
+- Chart.js temperature trend visualization
+- PWA manifest and auto-updating service worker
 
-## <picture> <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/competitive_programming_profile.png?raw=true" width=40> </picture> My Competitive Programming Profiles
+### Backend
 
-<p align="center">
-  <a href="https://codeforces.com/profile/7oSkaaa"><img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/50/000000/external-codeforces-programming-competitions-and-contests-programming-community-logo-shadow-tal-revivo.png" alt="Code Forces"/></a>
-	<a href="https://leetcode.com/7oSkaa/"><img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/50/000000/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png" alt="LeetCode"/></a>
-	<a href="https://atcoder.jp/users/ahmed_7oSkaa"><img src="https://i.ibb.co/Q9WSjDB/logo.png" alt="AtCoder" width = 60px/></a>
-	<a href="https://www.codechef.com/users/ahmed_7oskaa"><img src="https://img.icons8.com/color/50/000000/codechef.png" alt="Code Chef"/></a>
-	<a href="https://icpc.global/ICPCID/IW0X0CTD0ZV9"><img src="https://i.ibb.co/6J0r7rW/Daco-5610880.png" alt="ICPC Global" width = 60px /></a>     
-	<a href="https://www.codingame.com/profile/e5e56c7585fda3b457056b85180a4d636850344" ><img src="https://i.ibb.co/1MRppTC/codingame-1.png" alt="Codingame" width="100" height="50">
-</p>
+- Express REST API with MVC folder structure
+- JWT register/login/profile flow
+- Protected weather, favorites, and history routes
+- MongoDB User model with embedded favorite cities and search history
+- bcrypt password hashing
+- OpenWeatherMap API integration with normalized responses
+- In-memory API response caching with configurable TTL
+- express-validator request validation
+- Helmet, CORS, rate limiting, and centralized error middleware
 
-## <picture> <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Connect-with-me.gif?raw=true" width="100px"> </picture> Connect with me
-<p align="center">
-	<a href="mailto:ansh.sharmax17@gmail.com"><img img src="https://img.shields.io/badge/gmail-%23EA4335.svg?style=plastic&logo=gmail&logoColor=white" alt="Gmail"/></a>
-	<a href="https://github.com/anshsharmax17"><img src="https://img.shields.io/badge/github-%23181717.svg?style=plastic&logo=github&logoColor=white" alt="GitHub"/></a>
-	<a href="https://wa.me/9343044641"><img src="https://img.shields.io/badge/whatsapp-%2325D366.svg?style=plastic&logo=whatsapp&logoColor=white" alt="Whatsapp"/></a>
-	<a href="www.linkedin.com/in/ansh-sharmax17"><img src="https://img.shields.io/badge/linkedin-%230A66C2.svg?style=plastic&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-</p>
+## API Endpoints
 
+| Method | Endpoint | Auth | Description |
+| --- | --- | --- | --- |
+| POST | `/api/auth/register` | No | Create a user and return a JWT |
+| POST | `/api/auth/login` | No | Login and return a JWT |
+| GET | `/api/auth/me` | Yes | Load current user profile |
+| GET | `/api/weather/current?city=London` | Yes | Current weather by city |
+| GET | `/api/weather/current?lat=51.5&lon=-0.1` | Yes | Current weather by geolocation |
+| GET | `/api/weather/forecast?city=London` | Yes | 5-day forecast |
+| GET | `/api/user/favorites` | Yes | List favorite cities |
+| POST | `/api/user/favorites` | Yes | Save favorite city |
+| DELETE | `/api/user/favorites/:id` | Yes | Remove favorite city |
+| GET | `/api/user/history` | Yes | List recent searches |
+| DELETE | `/api/user/history` | Yes | Clear recent searches |
 
+Send protected requests with:
 
-## 🛠️ My Skills
+```http
+Authorization: Bearer <jwt-token>
+```
 
-### <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px>  </picture> Programming languages
+## Database Schema
 
-<p align="center"> 
-  &emsp; 
-  <a href="https://www.cprogramming.com/" target="_blank"> 
-    <img alt="C" src="https://img.shields.io/badge/C%20-%232370ED.svg?style=plastic&logo=c&logoColor=white">
-  </a> 
-  &emsp;
-  <a href="https://www.w3schools.com/cpp/" target="_blank"> 
-    <img alt="C++" src="https://img.shields.io/badge/C++%20-%2300599C.svg?style=plastic&logo=c%2B%2B&logoColor=white">
-  </a> 
-  &emsp;
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> 
-     <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript%20-%23F7DF1E.svg?style=plastic&logo=javascript&logoColor=black">
-   </a>
-  &emsp;
-  <a href="https://www.java.com" target="_blank"> 
-    <img alt="Java" src="https://img.shields.io/badge/Java-%23007396.svg?style=plastic&logo=java&logoColor=white">
-  </a>
-  &emsp;
-   <a href="https://www.python.org" target="_blank">
-    <img alt="Python" src="https://img.shields.io/badge/Python%20-%2314354C.svg?style=plastic&logo=python&logoColor=white">
-  </a>
-</p>
+The main MongoDB collection is `users`:
 
-### <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Front_End.gif?raw=true" width = 50px>  </picture> Frontend Development
-<p align="center"> 
-  &emsp; 
-  <a href="https://www.w3.org/html/" target="_blank"> 
-   <img alt="HTML" src="https://img.shields.io/badge/HTML5%20-%23E34F26.svg?style=plastic&logo=html5&logoColor=white">
-  </a>   
-  &emsp;
-  <a href="https://www.w3schools.com/css/" target="_blank">
-    <img alt="CSS" src="https://img.shields.io/badge/CSS%20-%231572B6.svg?style=plastic&logo=css3&logoColor=white">
-  </a> 
-  &emsp;
-  <a href="https://www.python.org" target="_blank">
-    <img alt="Python" src="https://img.shields.io/badge/react-%2361DAFB.svg?style=plastic&logo=React&logoColor=black">
-  </a>
-  &emsp;
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> 
-     <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript%20-%23F7DF1E.svg?style=plastic&logo=javascript&logoColor=black">
-   </a>
-</p>
+```js
+{
+  name: String,
+  email: String,
+  password: String, // bcrypt hash, select:false
+  favoriteCities: [{ name: String, country: String, lat: Number, lon: Number }],
+  searchHistory: [{ city: String, country: String, condition: String, temperature: Number }],
+  createdAt: Date,
+  updatedAt: Date
+}
+```
 
- ### <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Software_Tools.gif?raw=true" width = 50px>  </picture> Software & Tools
- 
-<p align="center">
-  &emsp;
-    <a href="#"><img alt="Git" src="https://img.shields.io/badge/Git%20-%23F05033.svg?style=plastic&logo=git&logoColor=white"></a>
-  &emsp;
-    <a href="#"><img alt="GitHub" src="https://img.shields.io/badge/github-%23181717.svg?style=plastic&logo=github&logoColor=white"></a>
-  &emsp;
-    <a href="#"><img alt="Google Sheets" src="https://img.shields.io/badge/Google%20Sheets%20-%2334A853.svg?style=plastic&logo=google%20sheets&logoColor=white"></a>
-  &emsp;
-    <a href="#"><img alt="Mark Down" src="https://img.shields.io/badge/Markdown-000000?style=plastic&logo=markdown&logoColor=white"></a>
-  &emsp;
-    <a href="#"><img alt="Stack Overflow" src="https://img.shields.io/badge/-Stack%20Overflow-FE7A16?style=plastic&logo=stack-overflow&logoColor=white"></a>
-  &emsp;
-    <a href="#"><img alt="Geekf For Geeks" src="https://img.shields.io/badge/geeksforgeeks-%230F9D58.svg?style=plastic&logo=geeksforgeeks&logoColor=white"></a>
-  &emsp;
-    <a href="#"><img alt="JSON" img src="https://img.shields.io/badge/json-%23000000.svg?style=plastic&logo=json&logoColor=white"></a>
-  &emsp;
-    <a href="#"><img alt="OpenGL" src="https://img.shields.io/badge/opengl-%235586A4.svg?style=plastic&logo=opengl&logoColor=white"></a>
-  &emsp;
-    <a href="#"><img alt="Selenium" src="https://img.shields.io/badge/selenium-%2343B02A.svg?&style=plastic&logo=selenium&logoColor=white"></a>
-    &emsp;
-    <a href="#"><img src="https://img.shields.io/badge/latex-%23008080.svg?&style=plastic&logo=latex&logoColor=white" /></a>
-    &emsp;
-    <a href="#"><img src="https://img.shields.io/badge/django-%23092E20.svg?&style=plastic&logo=django&logoColor=white" /></a>
-    &emsp;
-    <a href="#"><img src="https://img.shields.io/badge/mysql-%234479A1.svg?&style=plastic&logo=mysql&logoColor=white"/></a>
-</p>
+## Sample API Responses
 
- ### <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/IDEs.gif?raw=true" width = 50px>  </picture> IDEs
- 
-<p align="center">
-  &emsp;
-    <a href="#"><img alt="Visual Studio Code" src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=plastic&logo=visual-studio-code&logoColor=white"></a>
-  &emsp;
-    <a href="#"><img alt="JetBrain" src="https://img.shields.io/badge/jetbrains-%23000000.svg?style=plastic&logo=jetbrains&logoColor=white" /></a>
-  &emsp;
-    <a href="#"><img alt="Atom" src="https://img.shields.io/badge/atom-%2366595C.svg?&style=plastic&logo=atom&logoColor=white" /></a>
-  &emsp;
-    <a href="#"><img alt="Eclipse" src="https://img.shields.io/badge/eclipse%20ide-%232C2255.svg?&style=plastic&logo=eclipse%20ide&logoColor=white" /></a>
-</p>
+### Register/Login
 
- ### <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/CP_PS.gif?raw=true" width = 50px>  </picture> Competitive Programming & Problem Solving
- 
-<p align="center">
-  &emsp;
-    <a href="#"><img alt = "Codeforces" src="https://img.shields.io/badge/codeforces%20-%231F8ACB.svg?style=plastic&logo=codeforces&logoColor=white" /></a>	
-  &emsp;
-    <a href="#"><img alt = "Leetcode" src="https://img.shields.io/badge/leetcode%20-%23FFA116.svg?style=plastic&logo=leetcode&logoColor=black" /></a>
-  &emsp;
-    <a href="#"><img alt = "Huckerrank" src="https://img.shields.io/badge/hackerrank-%232EC866.svg?style=plastic&logo=hackerrank&logoColor=white" /></a>
-  &emsp;
-    <a href="#"><img alt = "CodeChef" src="https://img.shields.io/badge/codechef-%235B4638.svg?style=plastic&logo=codechef&logoColor=white" /></a>
-  &emsp;
-    <a href="#"><img alt = "Google" src="https://img.shields.io/badge/google-%234285F4.svg?style=plastic&logo=google&logoColor=white" /></a>
-  &emsp;
-    <a href="#"><img alt = "Codin Game" src="https://img.shields.io/badge/codingame-%23F2BB13.svg?&style=plastic&logo=codingame&logoColor=black" /></a>
-</p>
+```json
+{
+  "success": true,
+  "message": "Login successful",
+  "data": {
+    "user": { "id": "6650...", "name": "Alex", "email": "alex@example.com", "favoriteCities": [], "searchHistory": [] },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI..."
+  }
+}
+```
 
- ### <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/OS.gif?raw=true" width = 50px>  </picture> Operating Systems
- 
-<p align="center">
-  &emsp;
-    <a href="#"><img src="https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black"></a>
-  &emsp;
-    <a href="#"><img src="https://img.shields.io/badge/Ubuntu-E95420?style=plastic&logo=ubuntu&logoColor=white"></a>
-  &emsp;
-    <a href="#"><img src="https://img.shields.io/badge/Windows-0078D6?style=plastic&logo=windows&logoColor=white"></a>
-  &emsp;
-    <a href="#"><img src="https://img.shields.io/badge/pop!_os-%2348B9C7.svg?style=plastic&&logo=pop!_os&logoColor=white" /></a>
-  &emsp;
-    <a href="#"><img src="https://img.shields.io/badge/manjaro-%2335BF5C.svg?&style=plastic&logo=manjaro&logoColor=white" /></a>
-</p>
+### Current Weather
 
-<br> 
+```json
+{
+  "success": true,
+  "message": "Current weather loaded",
+  "data": {
+    "city": "London",
+    "country": "GB",
+    "coordinates": { "lon": -0.1257, "lat": 51.5085 },
+    "temperature": 16,
+    "feelsLike": 15,
+    "humidity": 70,
+    "windSpeed": 4.6,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "sunrise": 1715489600,
+    "sunset": 1715545200
+  }
+}
+```
 
----
+### Forecast
 
-<p align = "center">
-	<img alt = "Quote" src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&animation=grow_out_in&quoteCategory=programming">
-</p>
+```json
+{
+  "success": true,
+  "message": "Forecast loaded",
+  "data": {
+    "city": "London",
+    "country": "GB",
+    "forecast": [
+      { "date": "2026-05-12 12:00:00", "temperature": 16, "min": 14, "max": 17, "humidity": 70, "windSpeed": 4.6, "condition": "Clouds", "description": "broken clouds", "icon": "04d" }
+    ]
+  }
+}
+```
 
-## <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Statistics.gif?raw=true" width = 50px>  </picture> Github Stats
+## Local Setup
 
+### Prerequisites
 
+- Node.js 20+
+- MongoDB running locally or MongoDB Atlas connection string
+- OpenWeatherMap API key
 
-<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=7oSkaaa&theme=tokyonight_duo" alt="7oSkaaa" /></p>
+### Install
 
+```bash
+npm run install:all
+```
+
+### Environment Variables
+
+```bash
+cp server/.env.example server/.env
+cp client/.env.example client/.env
+```
+
+Update `server/.env` with your MongoDB URI, JWT secret, and OpenWeatherMap API key.
+
+### Run Development Servers
+
+```bash
+npm run dev
+```
+
+- Frontend: `http://localhost:5173`
+- Backend: `http://localhost:5000/api/health`
+
+### Production Build
+
+```bash
+npm run build
+npm start
+```
+
+## Deployment
+
+### MongoDB Atlas
+
+1. Create an Atlas cluster.
+2. Add a database user and password.
+3. Allow your backend host IP or use `0.0.0.0/0` for managed platform access.
+4. Copy the connection string into `MONGO_URI`.
+
+### Vercel Frontend
+
+1. Import the repository into Vercel.
+2. Set the project root to `client` or use the included root `vercel.json`.
+3. Add `VITE_API_URL=https://your-backend.example.com/api`.
+4. Deploy with build command `npm run build` and output directory `dist` if using `client` as root.
+
+### Render Backend
+
+1. Create a new Web Service or use `render.yaml`.
+2. Set root directory to `server`.
+3. Add environment variables from `server/.env.example`.
+4. Use build command `npm install` and start command `npm start`.
+
+### Railway Backend
+
+1. Create a Railway project from the repo.
+2. Set the service root to `server`.
+3. Add `MONGO_URI`, `JWT_SECRET`, `OPENWEATHER_API_KEY`, and `CLIENT_URL`.
+4. Railway can use the included `railway.json` start command.
+
+## Notes
+
+- Weather routes are protected intentionally so saved search history can be associated with the authenticated user.
+- OpenWeatherMap responses are cached in memory for `CACHE_TTL_SECONDS` to reduce external API usage.
+- The frontend uses Axios interceptors to attach JWT tokens automatically.

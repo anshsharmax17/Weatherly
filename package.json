@@ -1,0 +1,18 @@
+{
+  "name": "weatherly-mern",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Modern MERN weather dashboard with JWT authentication, favorites, search history, charts, and PWA support.",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "start": "npm run start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
