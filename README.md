@@ -7,7 +7,7 @@ Weatherly is a deployment-ready MERN stack weather dashboard with a polished Saa
 
 🚀 Live Demo
 
-Frontend: https://cartlivo.netlify.app Backend API: https://cartlivo-ecommerce.onrender.com
+Frontend: https://weatherly-mern.netlify.app Backend API: https://weatherly-2bcs.onrender.com
 
 ## Tech Stack
 
