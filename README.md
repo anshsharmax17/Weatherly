@@ -5,6 +5,10 @@
 
 Weatherly is a deployment-ready MERN stack weather dashboard with a polished SaaS-style UI, JWT authentication, MongoDB persistence, OpenWeatherMap integration, Chart.js forecasting, PWA support, favorites, recent searches, and animated glassmorphism backgrounds.
 
+🚀 Live Demo
+
+Frontend: https://cartlivo.netlify.app Backend API: https://cartlivo-ecommerce.onrender.com
+
 ## Tech Stack
 
 - **Frontend:** React 18, Vite, Tailwind CSS, Context API, Axios, React Router, Framer Motion, Chart.js, PWA
